@@ -1,0 +1,12 @@
+.overlay{
+  text-align:center;
+  color:white;
+}
+
+.overlay h1{
+  font-size:60px;
+}
+
+.overlay p{
+  font-size:18px;
+}
