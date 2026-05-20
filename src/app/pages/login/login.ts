@@ -11,13 +11,13 @@ import { FormsModule } from '@angular/forms';
 })
 export class Login {
 
-  email = '12';
-  password = '12';
+  email = '';
+  password = '';
 
   constructor(private router: Router) {}
 
   login() {
-    if(this.email === '12' && this.password === '12') {
+    if(this.email && this.password) {
       this.router.navigate(['/loginSuccess']);
     }
   }
