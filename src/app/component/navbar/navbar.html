@@ -1,10 +1,17 @@
 <nav class="navbar">
-  <div class="logo">WEBSITE</div>
+  <div class="logo" routerLink="/">WEBSITE</div>
 
   <ul class="nav-links">
     <li><a routerLink="/">HOME</a></li>
     <li><a routerLink="/about">ABOUT</a></li> <!-- ยังไม่มีหน้า About แต่สามารถเพิ่มได้ในอนาคต -->
     <li><a routerLink="/contact">CONTACT</a></li> <!-- ยังไม่มีหน้า Contact แต่สามารถเพิ่มได้ในอนาคต -->
-    <li><a routerLink="/login" class="login-btn">LOGIN</a></li>
+
+    @if(authService.isLoggedIn()){
+      <li><a routerLink="/finance">FINANCE</a></li>
+      <li><a (click)="logout()" class="logout-btn">LOGOUT</a></li>
+    } @else {
+      <li><a routerLink="/login" class="login-btn">LOGIN</a></li>
+    }
   </ul>
+  
 </nav>

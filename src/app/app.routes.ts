@@ -5,6 +5,7 @@ import { Login } from './pages/login/login';
 import { Register } from './pages/register/register';
 import { LoginSuccess } from './pages/loginSuccess/loginSuccess';
 import { RegisterSuccess } from './pages/register-success/register-success';
+import { Finance } from './pages/finance/finance';
 
 export const routes: Routes = [
   {
@@ -26,5 +27,9 @@ export const routes: Routes = [
   {
     path: 'registerSuccess',
     component: RegisterSuccess
+  },
+  {
+    path: 'finance',
+    component: Finance
   }
 ];

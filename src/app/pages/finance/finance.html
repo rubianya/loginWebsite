@@ -1,0 +1,31 @@
+<div class="page-background">
+  <div class="finance-card">
+
+    <h1>Finance Information</h1>
+
+    <table>
+
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Telephone Number</th>
+          <th>Deposit Amount</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        @for(customer of customers; track customer.name){
+          <tr>
+            <td>{{ customer.name }}</td>
+            <td>{{ customer.address }}</td>
+            <td>{{ customer.telephone }}</td>
+            <td>฿{{ customer.deposit.toLocaleString() }}</td>
+          </tr>
+        }
+      </tbody>
+      
+    </table>
+
+  </div>
+</div>
