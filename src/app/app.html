@@ -1,3 +1,5 @@
-<app-navbar></app-navbar>
+@if(authService.isLoggedIn()){
+  <app-navbar></app-navbar>
+}
 
 <router-outlet></router-outlet>

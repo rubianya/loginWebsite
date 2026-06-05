@@ -10,11 +10,15 @@ import { Finance } from './pages/finance/finance';
 export const routes: Routes = [
   {
     path: '',
-    component: Home
+    component: Login
   },
   {
     path: 'login',
     component: Login
+  },
+  {
+    path: 'home',
+    component: Home
   },
   {
     path: 'register',

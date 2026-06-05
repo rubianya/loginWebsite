@@ -22,6 +22,12 @@
     0 20px 40px rgba(0,0,0,0.35);
 }
 
+.error-message{
+  color:#ff2424;
+  text-align:center;
+  font-size:15px;
+}
+
 h1 {
   text-align: center;
 }

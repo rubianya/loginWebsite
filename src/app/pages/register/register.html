@@ -5,10 +5,16 @@
     <h1>REGISTER</h1>
 
     <input type="text" placeholder="Username" [(ngModel)]="username"/>
-    <input type="password" placeholder="Password" [(ngModel)]="password"/>
+    <input type="phone" placeholder="Phone Number" [(ngModel)]="phone"/>
     <input type="email" placeholder="Email" [(ngModel)]="email"/>
+    <input type="password" placeholder="Password" [(ngModel)]="password"/>
+    <input type="confirmPassword" placeholder="Confirm Password" [(ngModel)]="confirmPassword"/>
 
-    <button (click)="register()">Register</button>
+    @if(errorMessage){
+      <p class="error-message">{{ errorMessage }}</p>
+    }
+
+    <button (click)="register()">Create Account</button>
     <p>Already have an account?
       <span routerLink="/login"><b> Login</b></span>
     </p>
